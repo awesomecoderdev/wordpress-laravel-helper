@@ -1,0 +1,42 @@
+{
+  "name": "awesomecoder/wordpress",
+  "description": "The Laraish Framework for WordPress.",
+  "keywords": [
+    "framework",
+    "laravel",
+    "wordpress"
+  ],
+  "license": "MIT",
+  "homepage": "http://laravel.com",
+  "support": {
+    "issues": "https://github.com/laravel/framework/issues",
+    "source": "https://github.com/laravel/framework"
+  },
+  "authors": [
+    {
+      "name": "Mohammad Ibrahim",
+      "email": "awesomecoder.dev@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^8.0",
+    "laraish/contracts": "^2.0",
+    "laraish/support": "^2.0",
+    "laraish/pagination": "^2.0",
+    "laraish/options": "^2.0"
+  },
+  "autoload": {
+    "files": [
+      "Foundation/helpers.php"
+    ],
+    "psr-4": {
+      "Laraish\\": "./"
+    }
+  },
+  "scripts": {
+    "fix-cs": [
+      "prettier **/*.php --write"
+    ]
+  }
+}
